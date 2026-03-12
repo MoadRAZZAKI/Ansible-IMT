@@ -23,8 +23,8 @@ Sur la machine virtuelle Rocky Linux, nous commençons par démarrer la VM :
 
 Puis nous nous y connectons à l’aide de la commande vagrant ssh rocky : 
 
-<img width="747" height="212" alt="image" src="https://github.com/user-attachments/assets/75dec590-b53f-494b-87a6-bae854824b9f" />
 
+<img width="764" height="117" alt="image" src="https://github.com/user-attachments/assets/17bb1abd-6532-47e5-a3c7-7fe3a98eb37b" />
 
 
 
