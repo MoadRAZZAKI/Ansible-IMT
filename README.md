@@ -97,9 +97,46 @@ On se déconnecte de la vm et on la supprime :
 
 
 
+### Challenge 2 : 
 
 
 
+On démarre la VM ubuntu depuis le répertoire atelier-01 : 
 
 
+<img width="841" height="251" alt="image" src="https://github.com/user-attachments/assets/44d1a268-4681-4b4c-aef2-9a492078d737" />
+
+
+Ensuite, on se connecte à la VM avec un ssh : 
+
+<img width="720" height="343" alt="image" src="https://github.com/user-attachments/assets/fda28ca9-f5a4-4cf5-bc6b-64f6f630d6c9" />
+
+Une fois connecté à la VM , on rafraichit les informations sur les paquets :
+
+<img width="874" height="440" alt="image" src="https://github.com/user-attachments/assets/0998fe12-4ecb-456f-b1c9-6f99ac87469a" />
+
+cette fois , on ajoute le dépôt PPA Ansible : 
+
+<img width="954" height="333" alt="image" src="https://github.com/user-attachments/assets/9e67e712-f9ca-41e3-8040-10b1efb3d62b" />
+
+
+On rafraichit à nouveau la liste des paquets : 
+
+<img width="755" height="173" alt="image" src="https://github.com/user-attachments/assets/8dd3439d-3ee5-4b4b-bbdc-be16f54733af" />
+
+On installe Ansible depuis le dépôt PPA
+
+
+<img width="957" height="287" alt="image" src="https://github.com/user-attachments/assets/1f83544f-cfd1-4f9e-ab80-439299bba5d6" />
+
+
+
+On vérifie l'installation et on affiche la version
+
+<img width="959" height="189" alt="image" src="https://github.com/user-attachments/assets/13fa78c1-8e79-4b50-b654-513b3740dcb8" />
+
+
+et enfin on se déconnecte de la vm et on la supprime : 
+
+<img width="698" height="167" alt="image" src="https://github.com/user-attachments/assets/0ebf220c-7aea-4515-8dad-fd7a65011a69" />
 
