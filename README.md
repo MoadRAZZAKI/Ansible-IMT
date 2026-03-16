@@ -179,3 +179,6 @@ Après avoir installé ansible, on vérifie l'installation :
 
 ![alt text](image-8.png)
 
+## Authentification sur les Target Hosts
+
+
