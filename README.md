@@ -140,3 +140,42 @@ et enfin on se déconnecte de la vm et on la supprime :
 
 <img width="698" height="167" alt="image" src="https://github.com/user-attachments/assets/0ebf220c-7aea-4515-8dad-fd7a65011a69" />
 
+### Challenge 3 : 
+
+Depuis le répertoire de l’atelier, on démarre la VM : 
+
+
+![alt text](image-2.png)
+
+
+on se connecte à la VM :
+
+![alt text](image-3.png)
+
+
+Ensuite , on vérifie la version de python , et on installe le gestionnaire de paquets python : 
+
+
+![alt text](image-4.png)
+
+
+![alt text](image-5.png)
+
+
+Rocky Linux possède déjà le module venv intégré à Python.
+
+Donc, on crée l’environnement virtuel, et on l'active :
+
+![alt text](image-6.png)
+
+
+Le terminal change :
+
+
+![alt text](image-7.png)
+
+
+Après avoir installé ansible, on vérifie l'installation :
+
+![alt text](image-8.png)
+
