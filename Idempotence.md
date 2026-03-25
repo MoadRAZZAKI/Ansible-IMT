@@ -59,3 +59,79 @@ ansible all -m copy -a "src=/etc/fstab dest=/tmp/test3.txt"
 
 ```
 
+<br>
+
+
+Premier lancement → changed: true (orange) : le fichier est copié vers les cibles.
+
+<br>
+
+![alt text](image-9.png)
+
+
+<br>
+
+Deuxième lancement → changed: false (vert) : le fichier est déjà présent et identique, rien à faire.
+
+
+<br>
+
+![alt text](image-10.png)
+
+<br>
+
+
+
+## Suppression du fichier /tmp/test3.txt
+
+
+<br>
+
+```
+ansible all -m file -a "path=/tmp/test3.txt state=absent"
+
+```
+
+<br>
+
+Premier lancement → changed: true (orange) : le fichier est supprimé.
+
+<br>
+
+![alt text](image-11.png)
+
+
+
+<br>
+
+Deuxième lancement → changed: false (vert) : le fichier est déjà absent, rien à faire.
+
+<br>
+
+
+![alt text](image-12.png)
+
+
+<br>
+
+## Affichage de l'espace disque
+
+
+```
+
+ansible all -m command -a "df -h /"
+
+```
+
+<br>
+
+![alt text](image-13.png)
+
+<br>
+
+
+![alt text](image-14.png)
+
+Le module command affiche toujours changed: true, même au deuxième lancement. Contrairement aux modules package, file ou copy, il ne peut pas déterminer si une commande brute a modifié l'état du système. 
+Ce comportement montre très bien pourquoi les modules dédiés sont préférables : ils garantissent l'idempotence, ce que le module command ne fait pas.
+
