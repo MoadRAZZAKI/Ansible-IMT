@@ -66,7 +66,7 @@ Premier lancement → changed: true (orange) : le fichier est copié vers les ci
 
 <br>
 
-![alt text](image-9.png)
+![alt text](Captures/image-9.png)
 
 
 <br>
@@ -76,7 +76,7 @@ Deuxième lancement → changed: false (vert) : le fichier est déjà présent e
 
 <br>
 
-![alt text](image-10.png)
+![alt text](Captures/image-10.png)
 
 <br>
 
@@ -98,7 +98,7 @@ Premier lancement → changed: true (orange) : le fichier est supprimé.
 
 <br>
 
-![alt text](image-11.png)
+![alt text](Captures/image-11.png)
 
 
 
@@ -109,7 +109,7 @@ Deuxième lancement → changed: false (vert) : le fichier est déjà absent, ri
 <br>
 
 
-![alt text](image-12.png)
+![alt text](Captures/image-12.png)
 
 
 <br>
@@ -125,12 +125,12 @@ ansible all -m command -a "df -h /"
 
 <br>
 
-![alt text](image-13.png)
+![alt text](Captures/image-13.png)
 
 <br>
 
 
-![alt text](image-14.png)
+![alt text](Captures/image-14.png)
 
 Le module command affiche toujours changed: true, même au deuxième lancement. Contrairement aux modules package, file ou copy, il ne peut pas déterminer si une commande brute a modifié l'état du système. 
 Ce comportement montre très bien pourquoi les modules dédiés sont préférables : ils garantissent l'idempotence, ce que le module command ne fait pas.
