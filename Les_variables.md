@@ -94,5 +94,13 @@ On peut remarquer que la syntaxe est bien correcte et notre playbook a été bie
 
 <img width="903" height="814" alt="hand6" src="https://github.com/user-attachments/assets/8bd579c6-6f0e-42be-8a26-a6ccca960205" />
 
-Notre idempotence est bien assuré aussi après une autre éxecution comme montre la figure ci-dessous. 
+Notre idempotence est bien assuré aussi après une autre éxecution comme montre la figure ci-dessous. On peut remarquer que notre playbook ne réapplique pas notre nouvelle configuration puisque elle y est déjà : 
+
+<img width="906" height="688" alt="hand7" src="https://github.com/user-attachments/assets/f7ce0a04-85c4-482b-b579-1d829ded790e" />
+
+On termine à la fin avec le nettoyage de notre environnement de travail une fois que les tests sont terminés et les résultats validés : 
+
+<img width="588" height="225" alt="hand8" src="https://github.com/user-attachments/assets/60291f5d-1e1b-440f-a70e-794984fa0de9" />
+
+
 
