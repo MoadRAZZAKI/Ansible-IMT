@@ -5,14 +5,14 @@
 
 Pour tester le bon fonctionnement de Vagrant et de VirtualBox, on va lancer un premier cluster de quatre machines virtuelles Alpine Linux :
 
-![alt text](image.png)
+![alt text](Captures/image.png)
 
 
 ## Une box pour chaque distribution
 
 On fait une box pour chaque distribution, on récupère les box Vagrant des quatre principales distributions que l'on peut être emmener à utiliser dans un contexte professionnel
 
-![alt text](image-1.png)
+![alt text](Captures/image-1.png)
 
 ## Installer Ansible sur le Control Host
 
@@ -145,38 +145,38 @@ et enfin on se déconnecte de la vm et on la supprime :
 Depuis le répertoire de l’atelier, on démarre la VM : 
 
 
-![alt text](image-2.png)
+![alt text](Captures/image-2.png)
 
 
 on se connecte à la VM :
 
-![alt text](image-3.png)
+![alt text](Captures/image-3.png)
 
 
 Ensuite , on vérifie la version de python , et on installe le gestionnaire de paquets python : 
 
 
-![alt text](image-4.png)
+![alt text](Captures/image-4.png)
 
 
-![alt text](image-5.png)
+![alt text](Captures/image-5.png)
 
 
 Rocky Linux possède déjà le module venv intégré à Python.
 
 Donc, on crée l’environnement virtuel, et on l'active :
 
-![alt text](image-6.png)
+![alt text](Captures/image-6.png)
 
 
 Le terminal change :
 
 
-![alt text](image-7.png)
+![alt text](Captures/image-7.png)
 
 
 Après avoir installé ansible, on vérifie l'installation :
 
-![alt text](image-8.png)
+![alt text](Captures/image-8.png)
 
 
