@@ -1,4 +1,4 @@
-# Challenge atelier 10 : Un serveur web simple
+# Challenge atelier 12 : Les handlers
 
 On commence tout d'abord par le démarrage des VMs à l’aide de la commande :
 
