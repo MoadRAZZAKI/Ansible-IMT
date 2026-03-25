@@ -98,7 +98,7 @@ Notre idempotence est bien assuré aussi après une autre éxecution comme montr
 
 <img width="906" height="688" alt="hand7" src="https://github.com/user-attachments/assets/f7ce0a04-85c4-482b-b579-1d829ded790e" />
 
-Voici le contenu du fichier de configuration chrony de nos 3 targets : 
+Voici le contenu du fichier de configuration ```chrony``` de nos 3 targets : 
 
 ```bash
 [vagrant@target01 ~]$ cat /etc/chrony.conf 
