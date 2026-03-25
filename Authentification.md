@@ -38,7 +38,7 @@ Les résultats montrent que toutes les machines sont joignables.
 
 Les clés SSH des machines cibles ont été récupérées avec :
 ```bash 
-ssh-keyscan -t rsa rocky debian suse >> .ssh/known_hosts
+ssh-keyscan -t rsa target01 target02 target03 >> .ssh/known_hosts
 ```
 <img width="803" height="97" alt="auth6" src="https://github.com/user-attachments/assets/e30324b4-4cc9-4bdd-8629-d12825744cee" />
 Ensuite, une paire de clés SSH a été générée sur le Control Host comme montre la figure ci-dessous :
