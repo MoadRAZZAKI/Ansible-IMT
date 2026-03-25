@@ -98,6 +98,47 @@ Notre idempotence est bien assuré aussi après une autre éxecution comme montr
 
 <img width="906" height="688" alt="hand7" src="https://github.com/user-attachments/assets/f7ce0a04-85c4-482b-b579-1d829ded790e" />
 
+Voici le contenu du fichier de configuration chrony de nos 3 targets : 
+
+```bash
+[vagrant@target01 ~]$ cat /etc/chrony.conf 
+# /etc/chrony.conf
+server 0.fr.pool.ntp.org iburst
+server 1.fr.pool.ntp.org iburst
+server 2.fr.pool.ntp.org iburst
+server 3.fr.pool.ntp.org iburst
+driftfile /var/lib/chrony/drift
+makestep 1.0 3
+rtcsync
+logdir /var/log/chrony
+
+
+
+[vagrant@target02 ~]$ cat /etc/chrony.conf 
+# /etc/chrony.conf
+server 0.fr.pool.ntp.org iburst
+server 1.fr.pool.ntp.org iburst
+server 2.fr.pool.ntp.org iburst
+server 3.fr.pool.ntp.org iburst
+driftfile /var/lib/chrony/drift
+makestep 1.0 3
+rtcsync
+logdir /var/log/chrony
+
+
+
+[vagrant@target03 ~]$ cat /etc/chrony.conf 
+# /etc/chrony.conf
+server 0.fr.pool.ntp.org iburst
+server 1.fr.pool.ntp.org iburst
+server 2.fr.pool.ntp.org iburst
+server 3.fr.pool.ntp.org iburst
+driftfile /var/lib/chrony/drift
+makestep 1.0 3
+rtcsync
+logdir /var/log/chrony
+```
+
 On termine à la fin avec le nettoyage de notre environnement de travail une fois que les tests sont terminés et les résultats validés : 
 
 <img width="588" height="225" alt="hand8" src="https://github.com/user-attachments/assets/60291f5d-1e1b-440f-a70e-794984fa0de9" />
