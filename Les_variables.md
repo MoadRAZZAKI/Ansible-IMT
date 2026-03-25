@@ -22,3 +22,31 @@ Toutes les machines sont en état running comme montre la capture.
 <img width="658" height="220" alt="var2" src="https://github.com/user-attachments/assets/8071400d-b047-471f-a326-245660c4d7c8" />
 
 On se connecte par la suite à notre VM Ansible et on accède au répertoire de notre atelier :
+
+<img width="769" height="129" alt="var3" src="https://github.com/user-attachments/assets/66a1e660-a82a-4c1e-8a20-54f8acc901dd" />
+
+On commence tout d'abord par créer notre premier playbook qui affiche le contenu des variables ```mycar``` et ```mybike``` en mode ```debug```. Voici le contenu :
+
+```bash
+---  # myvars1.yml
+
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+    mycar: Audi
+    mybike: S1000R
+
+  tasks:
+    - debug:
+        msg: " My car is: {{mycar}}, My Bike is: {{mybike}}"
+```
+
+On peut remarquer dans la figure ci-dessous que notre playbook a été bien éxecuté :
+
+<img width="904" height="249" alt="var4" src="https://github.com/user-attachments/assets/1d780447-a8d2-49c9-8822-6ef0c56c7b22" />
+
+Par la suite, voici le résultat du remplacement des variables en uilisant l'option ```-e``` : 
+
+<img width="901" height="728" alt="vars5" src="https://github.com/user-attachments/assets/9d6ad4eb-30c0-49df-b154-2513edc7d259" />
+
