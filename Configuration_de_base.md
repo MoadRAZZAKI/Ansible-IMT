@@ -58,5 +58,10 @@ Pour tester notre configuraion on a effectué un ping et on peut remarquer que n
 
 <img width="736" height="402" alt="conf9" src="https://github.com/user-attachments/assets/d89751f8-d104-475e-af01-1c29c138a443" />
 
+Ensuite, on a créé notre groupe ```[testlab]``` qui contient nos target hosts et défini l'utilisateur ```vagrant``` pour la connexion à nos cibles.
+
+<img width="615" height="219" alt="conf12" src="https://github.com/user-attachments/assets/690a2d16-f6fe-412e-a690-fd04b246a71f" />
+
+
 
 
