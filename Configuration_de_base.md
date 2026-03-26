@@ -42,5 +42,10 @@ sudo apt install -y ansible
 
 <img width="473" height="96" alt="conf5" src="https://github.com/user-attachments/assets/2d3ad0a3-4914-4981-b855-c927647751dd" />
 
+On a effectué un premier test de connectivité avec la commande ```ansible all -i target01,target02,target03 -m ping```
+
+<img width="656" height="407" alt="conf6" src="https://github.com/user-attachments/assets/05d20a74-f651-47fe-a287-1ca652e9b646" />
+
+
 
 
