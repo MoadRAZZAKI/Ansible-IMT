@@ -60,8 +60,21 @@ Pour tester notre configuraion on a effectué un ping et on peut remarquer que n
 
 Ensuite, on a créé notre groupe ```[testlab]``` qui contient nos target hosts et défini l'utilisateur ```vagrant``` pour la connexion à nos cibles.
 
+<img width="600" height="208" alt="auth10" src="https://github.com/user-attachments/assets/36b4d049-895a-419e-adec-b4d0ef4d0974" />
+
+Voici le résultat de la commande ```ansible all -m ping```
+
+<img width="482" height="230" alt="conf11" src="https://github.com/user-attachments/assets/e5e02471-42a9-447a-b3ae-e8c3bcb4a957" />
+
+On a ajouté par la suite l'élévation des droits pour l'utilisateur ```vagrant``` sur les Target Hosts avec la commande ```ansible_become=yes```
+
 <img width="615" height="219" alt="conf12" src="https://github.com/user-attachments/assets/690a2d16-f6fe-412e-a690-fd04b246a71f" />
 
+Le test final affichant la première ligne du fichier ```/etc/shadow``` sur les target hosts a confirmé que les commandes nécessitant des privilèges élevés sont exécutées correctement sur toutes les machines.
 
+<img width="642" height="130" alt="auth13" src="https://github.com/user-attachments/assets/ca557ec8-895e-4696-9c10-e89d7fa1faec" />
 
+Une fois les tests terminés et les résultats validés, on proçède au nettoyage de notre environnement de travail afin de libérer les ressources.
+
+<img width="515" height="204" alt="conf13" src="https://github.com/user-attachments/assets/5f02084a-3808-47f6-9aae-039a7e9ac929" />
 
