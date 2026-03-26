@@ -50,3 +50,26 @@ Par la suite, voici le résultat du remplacement des variables en uilisant l'opt
 
 <img width="901" height="728" alt="vars5" src="https://github.com/user-attachments/assets/9d6ad4eb-30c0-49df-b154-2513edc7d259" />
 
+Après on passe à notre deuxième playbook ```myvars2.yml``` qui fait essentiellement la même chose que ```myvars1.yml``` qui utilise le module ```set_fact```. Voici le playbook:
+
+```bash
+---  # myvars2.yml
+
+- hosts: localhost
+  gather_facts: false
+
+
+  tasks:
+    - name: Setting variables
+      set_fact:
+        mycar: Dodge
+        mybike: Z900
+
+    - debug:
+	msg: " My car is: {{mycar}}, My Bike is: {{mybike}}"
+```bash
+
+Voici ensuite le résultat de l'exécution avec les extra vars.
+
+<img width="901" height="903" alt="vars4" src="https://github.com/user-attachments/assets/8e989144-97b9-431a-a69f-12c97501314d" />
+
