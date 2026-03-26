@@ -67,7 +67,7 @@ Après on passe à notre deuxième playbook ```myvars2.yml``` qui fait essentiel
 
     - debug:
 	msg: " My car is: {{mycar}}, My Bike is: {{mybike}}"
-```bash
+```
 
 Voici ensuite le résultat de l'exécution avec les extra vars.
 
