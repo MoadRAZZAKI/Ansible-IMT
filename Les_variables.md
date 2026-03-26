@@ -73,3 +73,27 @@ Voici ensuite le résultat de l'exécution avec les extra vars.
 
 <img width="901" height="903" alt="vars4" src="https://github.com/user-attachments/assets/8e989144-97b9-431a-a69f-12c97501314d" />
 
+Pour la partie suivante, afin d'afficher le contenu des deux variables mycar et mybike mais sans les définir on commence par créer notre répertoire group_vars. Ensuite on a élaboré le fichier all.yml qui contient nos variables et leurs valeurs respectives.
+
+Voici le fichier all.yml et notre playbook
+
+```bash
+---  # group_vars/all.yml
+
+mycar: VW
+mybike: BMW
+```
+
+```bash
+---  # myvars3.yml
+
+- hosts: all      
+  gather_facts: false
+  vars
+
+  tasks:
+    - name: Display variables
+      debug:
+	msg: " My car is: {{mycar}}, My Bike is: {{mybike}}"
+```
+
