@@ -95,3 +95,10 @@ Affichage du nombre de paquets RPM :
 <img width="1066" height="356" alt="image" src="https://github.com/user-attachments/assets/e197b37a-a306-45aa-9cef-129cdc5a06d7" />
 
 
+
+Enfin , on quitte le control host , et on supprimer les VM :
+
+<br>
+
+<img width="558" height="290" alt="image" src="https://github.com/user-attachments/assets/5a2a1502-c107-456a-b262-0953ac23071d" />
+
