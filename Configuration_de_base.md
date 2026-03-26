@@ -46,6 +46,17 @@ On a effectué un premier test de connectivité avec la commande ```ansible all 
 
 <img width="656" height="407" alt="conf6" src="https://github.com/user-attachments/assets/05d20a74-f651-47fe-a287-1ca652e9b646" />
 
-On a créé un répertoire dédié au projet Ansible afin d’organiser les fichiers de configuration. Après, on a créé un fichier ```ansible.cfg``` dans le répertoire du projet pour définir une configuration spécifique. Ce fichier permet de personnaliser le comportement d’Ansible, notamment l’emplacement de l’inventaire. Après on a vérifié que ce fichier est bien pris en compte avec la commande ```ansible --version | hear -n 2```
+On a créé un répertoire dédié au projet Ansible afin d’organiser les fichiers de configuration. Après, on a créé un fichier ```ansible.cfg``` dans le répertoire du projet pour définir une configuration spécifique. Ce fichier permet de personnaliser le comportement d’Ansible, notamment l’emplacement de l’inventaire. Après on a vérifié que ce fichier est bien pris en compte avec la commande ```ansible --version | hear -n 2```. On peut remarquer que notre nouveau fichier est bien pris en compte.
+
+<img width="577" height="233" alt="conf7" src="https://github.com/user-attachments/assets/dc124a9e-eff0-49cc-9c86-480413e25071" />
+
+Par la suite, on a configuré notre fichier de ansible.cfg contenant les machines cibles regroupées et en activant la journalisation.
+
+<img width="636" height="121" alt="conf8" src="https://github.com/user-attachments/assets/ce8a77d6-ba33-4eb2-9f35-6dd72d0b1993" />.
+
+Pour tester notre configuraion on a effectué un ping et on peut remarquer que notre fichier de logs contient bien le retour de la commande.
+
+<img width="736" height="402" alt="conf9" src="https://github.com/user-attachments/assets/d89751f8-d104-475e-af01-1c29c138a443" />
+
 
 
