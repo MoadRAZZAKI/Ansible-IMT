@@ -103,7 +103,7 @@ Voici le résultat de l'exécution :
 
 <img width="903" height="560" alt="vars8" src="https://github.com/user-attachments/assets/3b26b5f4-30d5-4a07-916b-d4403b0dbf9a" />
 
-Ensuite, afin de remplacer VW et BMW par Mercedes et Honda sur l'hôte ```target02```, on commence par créer le répertoire ```host_vars``` et on créé notre fichier ```target2.yml```. 
+Ensuite, afin de remplacer VW et BMW par Mercedes et Honda sur l'hôte ```target02```, on commence par créer le répertoire ```host_vars``` et on créé notre fichier ```target02.yml```. 
 Voici son contenu:
 
 ```bash
@@ -112,4 +112,10 @@ Voici son contenu:
 mycar: Mercedes
 mybike: Honda
 ```
+
+Voici le résultat de l'éxecution de notre playbook : 
+
+<img width="905" height="446" alt="vars8" src="https://github.com/user-attachments/assets/0b289b2c-2d9d-4835-b2da-af48f0562279" />
+
+
 
