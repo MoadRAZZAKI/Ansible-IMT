@@ -1,7 +1,6 @@
 # Challenge Atelier 14 : Les variables
 
-
-L’objectif de cet atelier est de configurer la communication entre un nœud de contrôle (control) et plusieurs machines cibles (target01, target02, target03) à l’aide d’Ansible, puis de vérifier cette communication avec le module ping.
+L’objectif de cet atelier est de comprendre et manipuler les différentes méthodes de gestion des variables dans Ansible.
 
 On commence tout d'abord par le démarrage des VMs à l’aide de la commande :
 
@@ -117,5 +116,31 @@ Voici le résultat de l'éxecution de notre playbook :
 
 <img width="905" height="446" alt="vars8" src="https://github.com/user-attachments/assets/0b289b2c-2d9d-4835-b2da-af48f0562279" />
 
+Par la suite, afin de nous permettre de saisir un nom d’utilisateur et un mot de passe de manière interactive, puis de les afficher. Voici le playbook ```display_user```
 
+```bash
+---  # display_user.yml
 
+- hosts: localhost
+  gather_facts: false
+
+  vars_prompt:
+    - name: user
+      prompt: "Entrez votre username SVP"
+      default: microlinux
+      private: false
+
+    - name: password
+      prompt: "Entrez votre MDP SVP"
+      default: yatahongaga
+      private: true
+
+  tasks:
+    - name: Display user infos
+      debug:
+	msg: "Le nom d'utilisateur est: {{ user }}, Son mot de passe est: {{ password }}"
+```
+
+Voici les résultats de l'éxecution de notre playbook :
+
+<img width="904" height="635" alt="vars9" src="https://github.com/user-attachments/assets/eec1b9f7-5fa1-4e87-ba79-93b0040a1111" />
