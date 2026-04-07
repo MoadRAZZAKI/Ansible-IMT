@@ -61,11 +61,3 @@ Chaque atelier est documenté dans un fichier dédié.
 - Vagrant  
 - VirtualBox ou équivalent  
 
----
-
-## Installation
-
-```bash
-git clone https://github.com/MoadRAZZAKI/Ansible-IMT.git
-cd Ansible-IMT
-vagrant up
