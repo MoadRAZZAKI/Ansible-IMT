@@ -87,3 +87,8 @@ Voici le résultat d'éxecution du playbook et la vérification du bon fonctionn
 <img width="985" height="502" alt="facts8" src="https://github.com/user-attachments/assets/3d3579de-0dd8-439e-ae36-b57740fcba5e" />
 <img width="990" height="561" alt="facts9" src="https://github.com/user-attachments/assets/d8e5038b-b589-417b-aef6-643e17b15eac" />
 
+Une fois les tests terminés et les résultats validés, on proçède au nettoyage de notre environnement de travail afin de libérer les ressources.
+<img width="597" height="183" alt="facts10" src="https://github.com/user-attachments/assets/0306e229-84fc-4b14-8e65-80e851c7a610" />
+
+
+
