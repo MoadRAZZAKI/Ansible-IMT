@@ -94,7 +94,13 @@ Voici le contenu de notre playbook :
         state: restarted
 ```
 
+
 Voici le résultat de l'éxecution et la vérification de l'existence du fichiers de configuration sur nos targets:
 <img width="1106" height="986" alt="jinja4" src="https://github.com/user-attachments/assets/c44a349f-a247-49ad-8bcf-780bcbdeed9a" />
 <img width="665" height="985" alt="jinja5" src="https://github.com/user-attachments/assets/8759b2fe-b769-4c06-99f1-1e640f6a0505" />
 
+
+
+
+Une fois les tests terminés et les résultats validés, on proçède au nettoyage de notre environnement de travail afin de libérer les ressources.
+<img width="624" height="203" alt="jinja6" src="https://github.com/user-attachments/assets/0fcbdac9-a9b8-4107-a0de-ee4f61e043a8" />
