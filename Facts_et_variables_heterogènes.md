@@ -58,7 +58,9 @@ Par la suite, afin d'afficher la version de Python installée sur nos targets, o
   tasks:
     - name: Display Python version
       debug:
-	msg: "Host {{inventory_hostname}} runs Python version {{ansible_python_version}}."
+        msg: >-
+           Host {{inventory_hostname}} runs
+           Python version {{ansible_python_version}}.
 ```
 
 Voici le résultat de l'éxecution du deuxième playbook.
