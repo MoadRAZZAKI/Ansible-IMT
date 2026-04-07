@@ -1,7 +1,7 @@
 # Projet Ansible - Ateliers pratiques
 
 ## Objectif du projet
-Ce projet a pour objectif de mettre en pratique les concepts fondamentaux d’Ansible à travers une série d’ateliers avec notre professeur .  
+Ce projet a pour objectif de mettre en pratique les concepts fondamentaux d’Ansible à travers une série d’ateliers.  
 Il permet de découvrir l’automatisation de la configuration des systèmes, la gestion de plusieurs machines et l’utilisation de playbooks pour déployer des services.
 
 ---
