@@ -144,3 +144,7 @@ Par la suite, afin de nous permettre de saisir un nom d’utilisateur et un mot 
 Voici les résultats de l'éxecution de notre playbook :
 
 <img width="904" height="635" alt="vars9" src="https://github.com/user-attachments/assets/eec1b9f7-5fa1-4e87-ba79-93b0040a1111" />
+
+On termine à la fin avec le nettoyage de notre environnement de travail une fois que les tests sont terminés et les résultats validés :
+
+<img width="497" height="114" alt="vars11" src="https://github.com/user-attachments/assets/591c9255-b632-4668-8467-34333967cd93" />
