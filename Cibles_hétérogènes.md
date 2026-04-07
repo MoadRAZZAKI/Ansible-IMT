@@ -26,7 +26,7 @@ Chrony est le client NTP de référence sur les distributions Linux modernes. Se
 | Debian         | `chrony` | `chrony`  | `/etc/chrony/chrony.conf`     |
 | Ubuntu         | `chrony` | `chrony`  | `/etc/chrony/chrony.conf`     |
 | Rocky Linux    | `chrony` | `chronyd` | `/etc/chrony.conf`            |
-| openSUSE Leap  | `chrony` | `chronyd` | `/etc/chrony.conf`            |
+| SUSE  | `chrony` | `chronyd` | `/etc/chrony.conf`            |
 
 ### 2.2 Configuration à déployer
 
@@ -259,7 +259,7 @@ Cette approche définit en amont trois variables (`chrony_package`, `chrony_serv
 
 ---
 
-## 7. Comparaison des deux approches
+## 5. Comparaison des deux approches
 
 | Critère                        | chrony-01 (gros sabots) | chrony-02 (variables)  |
 |--------------------------------|-------------------------|------------------------|
@@ -272,41 +272,99 @@ Cette approche définit en amont trois variables (`chrony_package`, `chrony_serv
 
 ---
 
-## 8. Vérification du déploiement
+## 6. Vérification du déploiement
 
 ### Contrôle syntaxique avant exécution
 
 ```bash
 yamllint chrony-01.yml
+```
+<img width="468" height="23" alt="image" src="https://github.com/user-attachments/assets/3071ec35-0144-4e21-8cf8-03fcad44df02" />
+
+
+```bash
 yamllint chrony-02.yml
+```
+<img width="464" height="23" alt="image" src="https://github.com/user-attachments/assets/83aad924-204f-4fff-8e45-d7cb71b57437" />
+
+
+
+
+```bash
 ansible-playbook --syntax-check chrony-01.yml
+```
+<img width="685" height="56" alt="image" src="https://github.com/user-attachments/assets/ab4544e7-611a-4846-b6cf-032b60d8a1bd" />
+
+
+```bash
 ansible-playbook --syntax-check chrony-02.yml
 ```
+
+<img width="694" height="62" alt="image" src="https://github.com/user-attachments/assets/8d83985a-caa5-489e-ac8f-cbd4c75c99bf" />
+
 
 ### Exécution des playbooks
 
 ```bash
 ansible-playbook chrony-01.yml
+```
+<img width="902" height="591" alt="image" src="https://github.com/user-attachments/assets/5839eeb8-2ab9-4867-bd90-a75e26504284" />
+
+
+```bash
 ansible-playbook chrony-02.yml
 ```
+<img width="901" height="622" alt="image" src="https://github.com/user-attachments/assets/001f1d2a-0c90-47f2-b8c7-d4566863a20e" />
+
+
 
 ### Vérification depuis le Control Host
 
 ```bash
-# Vérifier la synchronisation NTP sur toutes les cibles
+# Pour vérifier la synchronisation NTP sur toutes les cibles, on lance la commande suivante :
 ansible all -a "chronyc tracking"
+```
 
-# Vérifier le statut du service par famille de distribution
+<img width="728" height="609" alt="image" src="https://github.com/user-attachments/assets/85db5c69-e656-4683-ad1a-32778c36f674" />
+
+```bash
+# Pour vérifier le statut du service par famille de distribution, on utilise les commandes suivantes : 
 ansible debian,ubuntu -a "systemctl status chrony"
 ansible rocky,suse -a "systemctl status chronyd"
+```
 
-# Vérifier la configuration déployée
+<img width="902" height="593" alt="image" src="https://github.com/user-attachments/assets/d0364968-697f-47b2-88ec-15a760e8ac12" />
+
+<br>
+
+<br>
+
+
+<img width="909" height="495" alt="image" src="https://github.com/user-attachments/assets/169dfb07-7204-426c-b706-b80a9d5132fd" />
+
+<br>
+
+<img width="897" height="474" alt="image" src="https://github.com/user-attachments/assets/c6782576-cf03-4639-bf76-1c85ba94b83e" />
+
+<img width="903" height="446" alt="image" src="https://github.com/user-attachments/assets/2c8d92c0-5090-443b-a307-5210ab7dbd21" />
+
+
+
+```bash
+# Pour vérifier la configuration déployée
 ansible debian,ubuntu -a "cat /etc/chrony/chrony.conf"
 ansible rocky,suse -a "cat /etc/chrony.conf"
 ```
 
+
+<img width="794" height="388" alt="image" src="https://github.com/user-attachments/assets/bd5308e9-a536-46db-9d18-3d55dd7a2721" />
+
+<img width="713" height="394" alt="image" src="https://github.com/user-attachments/assets/e87ba406-2b87-4b34-b92a-43110e978604" />
+
+
+
 ---
 
-## 9. Conclusion
-
-Cet atelier illustre une progression naturelle dans l'écriture de playbooks Ansible pour environnements hétérogènes. La méthode « gros sabots » permet de démarrer rapidement mais atteint vite ses limites dès que le nombre de distributions ou de tâches augmente. L'approche par variables (`set_fact`) offre une meilleure séparation entre la **connaissance spécifique à chaque distribution** et la **logique d'installation générique**, ce qui constitue le fondement des rôles Ansible.
+## 7. Conclusion
+L’atelier 17 nous a permis de comprendre l’évolution naturelle dans la façon d’écrire des playbooks Ansible pour des environnements hétérogènes. Une approche rapide et peu structurée peut fonctionner au départ, mais elle devient vite difficile à maintenir lorsque la complexité augmente. 
+À l’inverse, l’utilisation de variables comme set_fact nous a montré l’importance de bien séparer les éléments spécifiques à chaque distribution de la logique générique, ce qui constitue une base solide pour des playbooks plus propres, modulaires et évolutifs, notamment avec l’utilisation des rôles Ansible.
