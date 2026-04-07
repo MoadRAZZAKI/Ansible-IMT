@@ -23,38 +23,39 @@ Chaque atelier est documenté dans un fichier Markdown dédié contenant :
 
 ## 📚 Liste des ateliers
 
-- [Installation - Prise en main](./Installation-Prise-en-main.md)  
+- [Installation - Prise en main](./1-Installation-Prise-en-main.md)  
   👉 Découvrir Ansible, installer l’environnement et exécuter les premières commandes.
 
-- [Configuration de base](./Configuration_de_base.md)  
-  👉 Comprendre la structure d’un projet Ansible et configurer les premiers playbooks.
-
-- [Authentification](./Authentification.md)  
+- [Authentification](./2-Authentification.md)  
   👉 Mettre en place l’authentification SSH entre le control node et les machines cibles.
 
-- [Cibles hétérogènes](./Cibles_hétérogènes.md)  
-  👉 Gérer différents systèmes (Debian, Rocky, SUSE…) avec Ansible.
+- [Configuration de base](./3-Configuration_de_base.md)  
+  👉 Comprendre la structure d’un projet Ansible et configurer les premiers playbooks.
 
-- [Les variables](./Les_variables.md)  
-  👉 Utiliser les variables pour rendre les playbooks dynamiques.
-
-- [Les variables enregistrées](./Les_variables_enregistrées.md)  
-  👉 Récupérer et exploiter les résultats des tâches avec `register`.
-
-- [Facts et variables hétérogènes](./Facts_et_variables_heterogènes.md)  
-  👉 Utiliser les facts et adapter les configurations selon les systèmes.
-
-- [Idempotence](./Idempotence.md)  
+- [Idempotence](./4-Idempotence.md)  
   👉 Garantir que les playbooks peuvent être exécutés plusieurs fois sans effet indésirable.
 
-- [Les handlers](./Les_handlers.md)  
+- [Un serveur web simple](./5-Un_serveur_web_simple.md)  
+  👉 Déployer et configurer automatiquement un serveur web avec Ansible.
+
+- [Les handlers](./6-Les_handlers.md)  
   👉 Déclencher des actions (ex: redémarrage de service) uniquement en cas de modification.
 
-- [Jinja Templates](./Jinja_Templates.md)  
+- [Les variables](./7-Les_variables.md)  
+  👉 Utiliser les variables pour rendre les playbooks dynamiques.
+
+- [Les variables enregistrées](./8-Les_variables_enregistrées.md)  
+  👉 Récupérer et exploiter les résultats des tâches avec `register`.
+
+- [Facts et variables hétérogènes](./9-Facts_et_variables_heterogènes.md)  
+  👉 Utiliser les facts et adapter les configurations selon les systèmes.
+
+- [Cibles hétérogènes](./10-Cibles_hétérogènes.md)  
+  👉 Gérer différents systèmes (Debian, Rocky, SUSE…) avec Ansible.
+
+- [Jinja Templates](./11-Jinja_Templates.md)  
   👉 Générer des fichiers dynamiques avec des templates Jinja2.
 
-- [Un serveur web simple](./Un_serveur_web_simple.md)  
-  👉 Déployer et configurer automatiquement un serveur web avec Ansible.
 
 ---
 
